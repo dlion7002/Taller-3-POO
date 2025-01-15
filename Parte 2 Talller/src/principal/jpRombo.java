@@ -26,19 +26,176 @@ public class jpRombo extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        txtPerimetro = new javax.swing.JTextField();
+        txtArea = new javax.swing.JTextField();
+        btnCalcular = new javax.swing.JButton();
+        btnLimpiar = new javax.swing.JButton();
+        lblDiagonalMenor = new javax.swing.JLabel();
+        txtDiagonalMenor = new javax.swing.JTextField();
+        lblDiagonalMayor = new javax.swing.JLabel();
+        txtDiagonalMayor = new javax.swing.JTextField();
+        lblArea = new javax.swing.JLabel();
+        lblPerimetro = new javax.swing.JLabel();
+        txtLado = new javax.swing.JTextField();
+        lblLado = new javax.swing.JLabel();
+
+        txtPerimetro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPerimetroActionPerformed(evt);
+            }
+        });
+
+        txtArea.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtAreaActionPerformed(evt);
+            }
+        });
+
+        btnCalcular.setText("Calcular");
+        btnCalcular.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCalcularActionPerformed(evt);
+            }
+        });
+
+        btnLimpiar.setText("Limpiar");
+        btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLimpiarActionPerformed(evt);
+            }
+        });
+
+        lblDiagonalMenor.setText("DiagonalMenor");
+
+        txtDiagonalMenor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtDiagonalMenorActionPerformed(evt);
+            }
+        });
+
+        lblDiagonalMayor.setText("DiagonalMayor");
+
+        txtDiagonalMayor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtDiagonalMayorActionPerformed(evt);
+            }
+        });
+
+        lblArea.setText("Area");
+
+        lblPerimetro.setText("Perimetro");
+
+        lblLado.setText("Lado");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(btnCalcular)
+                        .addGap(62, 62, 62)
+                        .addComponent(btnLimpiar))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblDiagonalMayor)
+                            .addComponent(lblArea, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblDiagonalMenor)
+                            .addComponent(lblPerimetro)
+                            .addComponent(lblLado))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtPerimetro)
+                            .addComponent(txtArea)
+                            .addComponent(txtDiagonalMayor)
+                            .addComponent(txtDiagonalMenor, javax.swing.GroupLayout.DEFAULT_SIZE, 143, Short.MAX_VALUE)
+                            .addComponent(txtLado))))
+                .addContainerGap(144, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblDiagonalMayor)
+                    .addComponent(txtDiagonalMayor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblDiagonalMenor)
+                    .addComponent(txtDiagonalMenor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(3, 3, 3)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblLado)
+                    .addComponent(txtLado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblArea)
+                    .addComponent(txtArea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblPerimetro)
+                    .addComponent(txtPerimetro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnCalcular)
+                    .addComponent(btnLimpiar))
+                .addContainerGap(107, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void txtPerimetroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPerimetroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPerimetroActionPerformed
+
+    private void txtAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAreaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAreaActionPerformed
+
+    private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
+        // TODO add your handling code here:
+         double diagonalMayor = Double.parseDouble(txtDiagonalMayor.getText());
+        double diagonalMenor = Double.parseDouble(txtDiagonalMenor.getText());
+        double lado = Double.parseDouble(txtLado.getText());
+
+        double area = (diagonalMayor * diagonalMenor) / 2.0;
+        double perimetro = 4 * lado;
+
+        txtArea.setText(String.valueOf(area));
+        txtPerimetro.setText(String.valueOf(perimetro));
+    }//GEN-LAST:event_btnCalcularActionPerformed
+
+    private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
+        // TODO add your handling code here:
+        txtDiagonalMayor.setText("");
+        txtDiagonalMenor.setText("");
+        txtLado.setText("");
+        txtArea.setText("");
+        txtPerimetro.setText("");
+    }//GEN-LAST:event_btnLimpiarActionPerformed
+
+    private void txtDiagonalMenorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDiagonalMenorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtDiagonalMenorActionPerformed
+
+    private void txtDiagonalMayorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDiagonalMayorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtDiagonalMayorActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCalcular;
+    private javax.swing.JButton btnLimpiar;
+    private javax.swing.JLabel lblArea;
+    private javax.swing.JLabel lblDiagonalMayor;
+    private javax.swing.JLabel lblDiagonalMenor;
+    private javax.swing.JLabel lblLado;
+    private javax.swing.JLabel lblPerimetro;
+    private javax.swing.JTextField txtArea;
+    private javax.swing.JTextField txtDiagonalMayor;
+    private javax.swing.JTextField txtDiagonalMenor;
+    private javax.swing.JTextField txtLado;
+    private javax.swing.JTextField txtPerimetro;
     // End of variables declaration//GEN-END:variables
 }

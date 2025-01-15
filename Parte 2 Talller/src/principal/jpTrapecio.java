@@ -26,19 +26,222 @@ public class jpTrapecio extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        lblArea = new javax.swing.JLabel();
+        lblPerimetro = new javax.swing.JLabel();
+        txtPerimetro = new javax.swing.JTextField();
+        txtLado1 = new javax.swing.JTextField();
+        txtArea = new javax.swing.JTextField();
+        lblLado1 = new javax.swing.JLabel();
+        btnCalcular = new javax.swing.JButton();
+        btnLimpiar = new javax.swing.JButton();
+        lblBaseMenor = new javax.swing.JLabel();
+        txtBaseMenor = new javax.swing.JTextField();
+        lblBaseMayor = new javax.swing.JLabel();
+        txtBaseMayor = new javax.swing.JTextField();
+        lblLado2 = new javax.swing.JLabel();
+        txtLado2 = new javax.swing.JTextField();
+        lblAltura = new javax.swing.JLabel();
+        txtAltura = new javax.swing.JTextField();
+
+        lblArea.setText("Area");
+
+        lblPerimetro.setText("Perimetro");
+
+        txtPerimetro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPerimetroActionPerformed(evt);
+            }
+        });
+
+        txtArea.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtAreaActionPerformed(evt);
+            }
+        });
+
+        lblLado1.setText("Lado 1");
+
+        btnCalcular.setText("Calcular");
+        btnCalcular.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCalcularActionPerformed(evt);
+            }
+        });
+
+        btnLimpiar.setText("Limpiar");
+        btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLimpiarActionPerformed(evt);
+            }
+        });
+
+        lblBaseMenor.setText("BaseMenor");
+
+        txtBaseMenor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtBaseMenorActionPerformed(evt);
+            }
+        });
+
+        lblBaseMayor.setText("BaseMayor");
+
+        txtBaseMayor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtBaseMayorActionPerformed(evt);
+            }
+        });
+
+        lblLado2.setText("Lado 2");
+
+        lblAltura.setText("Altura");
+
+        txtAltura.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtAlturaActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addGap(90, 90, 90)
+                        .addComponent(txtAltura))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addGap(25, 25, 25)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(btnCalcular)
+                                .addGap(62, 62, 62)
+                                .addComponent(btnLimpiar))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblLado2)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(lblBaseMayor)
+                                            .addComponent(lblArea, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(lblBaseMenor)
+                                            .addComponent(lblPerimetro)
+                                            .addComponent(lblLado1))
+                                        .addComponent(lblAltura)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(txtLado2)
+                                    .addComponent(txtPerimetro)
+                                    .addComponent(txtArea)
+                                    .addComponent(txtBaseMayor)
+                                    .addComponent(txtBaseMenor, javax.swing.GroupLayout.DEFAULT_SIZE, 143, Short.MAX_VALUE)
+                                    .addComponent(txtLado1))))))
+                .addContainerGap(167, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblBaseMayor)
+                    .addComponent(txtBaseMayor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtBaseMenor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(3, 3, 3)
+                        .addComponent(lblBaseMenor, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(3, 3, 3)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblLado1)
+                    .addComponent(txtLado1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(3, 3, 3)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblLado2)
+                    .addComponent(txtLado2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblAltura)
+                    .addComponent(txtAltura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblArea)
+                    .addComponent(txtArea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblPerimetro)
+                    .addComponent(txtPerimetro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnCalcular)
+                    .addComponent(btnLimpiar))
+                .addContainerGap(54, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void txtPerimetroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPerimetroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPerimetroActionPerformed
+
+    private void txtAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAreaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAreaActionPerformed
+
+    private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
+        // TODO add your handling code here:
+        double baseMayor = Double.parseDouble(txtBaseMayor.getText());
+        double baseMenor = Double.parseDouble(txtBaseMenor.getText());
+        double altura = Double.parseDouble(txtAltura.getText());
+        double lado1 = Double.parseDouble(txtLado1.getText());
+        double lado2 = Double.parseDouble(txtLado2.getText());
+
+        double area = ((baseMayor + baseMenor) * altura) / 2.0;
+        double perimetro = baseMayor + baseMenor + lado1 + lado2;
+
+        txtArea.setText(String.valueOf(area));
+        txtPerimetro.setText(String.valueOf(perimetro));
+    }//GEN-LAST:event_btnCalcularActionPerformed
+
+    private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
+        // TODO add your handling code here:
+        txtBaseMayor.setText("");
+        txtBaseMenor.setText("");
+        txtAltura.setText("");
+        txtLado1.setText("");
+        txtLado2.setText("");
+        txtArea.setText("");
+        txtPerimetro.setText("");
+    }//GEN-LAST:event_btnLimpiarActionPerformed
+
+    private void txtBaseMenorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtBaseMenorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtBaseMenorActionPerformed
+
+    private void txtBaseMayorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtBaseMayorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtBaseMayorActionPerformed
+
+    private void txtAlturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAlturaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAlturaActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCalcular;
+    private javax.swing.JButton btnLimpiar;
+    private javax.swing.JLabel lblAltura;
+    private javax.swing.JLabel lblArea;
+    private javax.swing.JLabel lblBaseMayor;
+    private javax.swing.JLabel lblBaseMenor;
+    private javax.swing.JLabel lblLado1;
+    private javax.swing.JLabel lblLado2;
+    private javax.swing.JLabel lblPerimetro;
+    private javax.swing.JTextField txtAltura;
+    private javax.swing.JTextField txtArea;
+    private javax.swing.JTextField txtBaseMayor;
+    private javax.swing.JTextField txtBaseMenor;
+    private javax.swing.JTextField txtLado1;
+    private javax.swing.JTextField txtLado2;
+    private javax.swing.JTextField txtPerimetro;
     // End of variables declaration//GEN-END:variables
 }
